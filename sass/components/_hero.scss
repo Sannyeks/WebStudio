@@ -1,93 +1,93 @@
 .hero {
-  max-width: 1600px;
-  min-width: 320px;
-  min-height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--secondary-bgc);
-  background-image: var(--bg-gradient),
-    url(../images/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  padding: 118px 0;
-  @include retina {
-  background-image: var(--bg-gradient),
-  url(../images/bg-mobile-2x.jpg);
-}
-  // @media screen and (max-width: 480px) {
-  //   width: 480px;
-  // }
-
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 769px) {
-    width: 1200px;
-  }
-
-  @include tablet { 
-   background-image: var(--bg-gradient),
-    url(../images/bg-tablet.jpg);
+    max-width: 1600px;
+    min-width: 320px;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--secondary-bgc);
+    background-image: var(--bg-gradient),
+      url(../images/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 118px 0;
     @include retina {
-  background-image: var(--bg-gradient),
-  url(../images/bg-tablet-2x.jpg);
+    background-image: var(--bg-gradient),
+    url(../images/bg-mobile-2x.jpg);
 }
-  } 
+    // @media screen and (max-width: 480px) {
+    //   width: 480px;
+    // }
 
-  @include desktop {
-    padding: 200px 0;
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      width: 768px;
+    }
+
+    @media screen and (min-width: 769px) {
+      width: 1200px;
+    }
+
+    @include tablet { 
+     background-image: var(--bg-gradient),
+      url(../images/bg-tablet.jpg);
+      @include retina {
+    background-image: var(--bg-gradient),
+    url(../images/bg-tablet-2x.jpg);
+}
+    } 
+
+    @include desktop {
+      padding: 200px 0;
+      background-image: var(--bg-gradient),
+      url(../images/bg-desktop-2x.jpg);
+      @include retina {
     background-image: var(--bg-gradient),
     url(../images/bg-desktop.jpg);
-    @include retina {
-  background-image: var(--bg-gradient),
-  url(../images/bg-desktop-2x.jpg);
 }
-  } 
-}
-
-.hero__title {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.6;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--primary-bgc);
-  margin: 0 auto;
-
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    width: 360px; 
+    } 
   }
+  
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-bgc);
+    margin: 0 auto;
 
-  @include desktop {
-    max-width: 696px;
-    font-size: 44px;
-    line-height: 1.36;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      width: 360px; 
     }
-}
 
-.button {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--primary-bgc);
-  background-color: var(--accent-color);
-  border: transparent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 10px 32px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
+    @include desktop {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+      }
   }
-}
+  
+  .button {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--primary-bgc);
+    background-color: var(--accent-color);
+    border: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
 
-.button--hero {
-  margin-top: 30px;
-}
+  .button--hero {
+    margin-top: 30px;
+  }
