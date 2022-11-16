@@ -1,52 +1,46 @@
-.hero {
-    max-width: 1600px;
-    min-width: 320px;
-    min-height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--secondary-bgc);
-    background-image: var(--bg-gradient),
-      url(../images/bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    padding: 118px 0;
-    @include retina {
-    background-image: var(--bg-gradient),
-    url(../images/bg-mobile-2x.jpg);
+.hero{
+  max-width: 480px;
+  height: 400px;
+  left: 0px;
+  top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: var(--secondary-bgc); 
+  background-image: var(--bg-gradient), 
+  url(../images/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 118px 0;   
+  @include retina {
+  background-image: var(--bg-gradient),
+  url(../images/bg-mobile-2x.jpg);
 }
-    // @media screen and (max-width: 480px) {
-    //   width: 480px;
-    // }
-
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-      width: 768px;
-    }
-
-    @media screen and (min-width: 769px) {
-      width: 1200px;
-    }
-
-    @include tablet { 
-     background-image: var(--bg-gradient),
+  @media screen and (min-width: 768px){
+      max-width: 768px;
+      height: 400px; 
+      top: 80px; 
+      background-image: var(--bg-gradient),
       url(../images/bg-tablet.jpg);
       @include retina {
-    background-image: var(--bg-gradient),
-    url(../images/bg-tablet-2x.jpg);
-}
-    } 
-
-    @include desktop {
-      padding: 200px 0;
-      background-image: var(--bg-gradient),
-      url(../images/bg-desktop-2x.jpg);
+        background-image: var(--bg-gradient),
+        url(../images/bg-tablet-2x.jpg);
+      }
+    }
+  @media screen and (min-width: 1200px){
+      max-width: 1600px;
+      height: 600px;  
+      top: 80px;
+      padding: 200px 0;  
+      background-image:var(--bg-gradient),
+      url(../images/bg-desktop.jpg);
       @include retina {
     background-image: var(--bg-gradient),
-    url(../images/bg-desktop.jpg);
-}
-    } 
+    url(../images/bg-desktop-2x.jpg);
   }
+}
+}
   
   .hero__title {
     font-weight: 900;
